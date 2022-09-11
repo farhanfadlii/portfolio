@@ -146,24 +146,54 @@ figure {
 
 .social a{
   font-size: 4.5em;
-  color:#8a3ab9;
+  padding: 3rem ;
   transition: 0.3s;
 }
-.social:hover{
+.fa-linkedin{
+  color:#0072b1 ;
+  transition: 0.3s;
+}
+.fa-linkedin:hover{
   font-size: 1.075em;
   filter: drop-shadow(0 0 10px) ;
 }
-footer{
-  background: #484848;
+.fa-instagram{
+  transition: 0.3s;
+}
+.fa-instagram:hover{
+  font-size: 1.075em;
+  filter: drop-shadow(0 0 10px) ;
+}
+.fa-github{
+  transition: 0.3s;
+  color: black;
+}
+.fa-github:hover{
+  font-size: 1.075em;
+  filter: drop-shadow(0 0 10px) ;
+}
+
+#farhan{
+  letter-spacing: 3px;
 }
 .footertext{
-  color: white;
+  color: black;
 }
 .footer{
   color: white;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 
