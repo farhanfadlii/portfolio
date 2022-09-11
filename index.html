@@ -11,7 +11,8 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<script src="portfolio.js" defer></script>
-
+	<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -46,10 +47,10 @@
 	<div class="container-fluid padding">
 	<div class="row welcome text-center">
 	<div class="col-12">
-		<h1 id="home" class="display-4">Bonjour!</h1>
+		<h1 id="home" class="display-4 animate__animated animate__fadeInLeft">Bonjour!</h1>
 	</div>
 	<hr>
-	<div class="col-12">
+	<div class="col-12 ">
 		<p class="lead">I'm Farhan Fadliraman an UPN Veteran Jakarta Student and i am a web developer, designer and copywriter living in Jakarta. </p>
 		<br>
 		<br>
@@ -70,10 +71,10 @@
 
 
 <!--- Two Column Section -->
-<div class="container-fluid padding">
+<div class="container-fluid padding reveal">
 <div class="row skills text-center">
 	<div class="col-12">
-		<h1 id="aboutme" class="display-4"> My Skillsets </h1>
+		<h1 id="aboutme" class="display-4 "> My Skillsets </h1>
 		<hr class="light">
 		<p class="descskill">Some of the skills that i have developed throughout my life.</p>
 	</div>
@@ -81,7 +82,7 @@
 </div>
 
 <!--- Three Column Section -->
-<div class="container-fluid padding works">
+<div class="container-fluid padding works reveal">
 <div class="row text-center padding">
 	<br>
 	<br>
@@ -113,8 +114,8 @@
 </div>
 </div>
 
-<!--- Meet the team -->
-<div class="container-fluid padding">
+<!--- My Works -->
+<div class="container-fluid padding reveal">
 <div class="row works text-center">
 	<div class="col-12">
 		<h1 id="myworks" class="display-4"> Some of my works</h1>
@@ -124,22 +125,21 @@
 </div>
 	<!--- Cards -->
 
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-<div class="row padding">
-	<div class="col-md-4">
+<div class="container-fluid box reveal">
+<div class="row padding box">
+	<div class="col-md-4 ">
 		<div class="card">
 			<img class="card-img-top" src="article.jpg">
 			<div class="card-body">
 			<h4 class="card-title"> Articles </h4>
-			<p class="card-text"> Numerous articles that i wrote on Zakat Sukses' website.</p>
+			<p class="card-text"> Numerous articles that i wrote on Zakat Sukses' website.</p> <br>
 			<a href="https://zakatsukses.org/author/farhan-fadlirahman/" target="_blank" class="btn btn-outline-secondary">View Work</a>	
 			</div>
 		</div>
 
 	</div>
 
-	<div class="col-md-4">
+	<div class="col-md-4 ">
 		<div class="card">
 			<img class="card-img-top" src="design.png">
 			<div class="card-body">
@@ -151,13 +151,25 @@
 
 	</div>
 
+	<div class="col-md-4 ">
+		<div class="card">
+			<img class="card-img-top" src="snake.png">
+			<div class="card-body">
+			<h4 class="card-title"> Simple Snake Game </h4>
+			<p class="card-text"> Bootleg snake game made using javascript <br><br></p>
+			<a href="https://farhanfadlii.github.io/Snakeeee/" target="_blank" class="btn btn-outline-secondary">View Work</a>	
+			</div>
+		</div>
+
+	</div>
+
 	<div class="col-md-4">
 		<div class="card">
-			<img class="card-img-top" src="construction.png">
+			<img class="card-img-top" src="tictactoe.png">
 			<div class="card-body">
-			<h4 class="card-title"> Websites </h4>
-			<p class="card-text"> Still being made !</p>
-			<a href="https://zakatsukses.org/author/farhan-fadlirahman/" target="_blank" class="btn btn-outline-secondary">View Work</a>	
+			<h4 class="card-title"> Tic Tac Toe</h4>
+			<p class="card-text"> Tic tac toe on browser! <br> Made with javascript,html, and CSS.</p>
+			<a href="https://farhanfadlii.github.io/TicTacToe/" target="_blank" class="btn btn-outline-secondary">View Work</a>	
 			</div>
 		</div>
 
@@ -168,9 +180,13 @@
  <div class="row text-center">
  	<div class="col-12">
  		<h2>Connect with me!</h2>
- 	<div class="col 12 social padding">
+ 	<div class="col-12 social padding">
  		<a href="https://www.instagram.com/farhanfadli_/" target="_blank"><i class="fab fa-instagram"></i></a>
+ 		<a href="https://www.linkedin.com/in/farhan-fadlirahman-53021b1a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+ 		<a href="https://github.com/farhanfadlii/" target="_blank"><i class="fab fa-github"></i></a>
+ 		
  	</div>
+
 </div>
 </div>
 
@@ -179,13 +195,9 @@
 	<div class="container-fluid padding">
 	<div class="row text-center">
 		<div class="col-12 footertext">
-		<h5>Farhan Fadlirahman </h5> <p>0859-4139-8116</p>
+		<h5 id="farhan">FARHAN FADLIRAHMAN </h5><br>
 		<h6>farhan.fadlirahman@upnvj.ac.id
 		jambansaja@gmail.com</h6> 
-		</div>
-		<div class="col-12 footer">
-			<hr class="light">
-			<h5>&copy; Farhan Fadlirahman • Made with <bold>Bootstrap</bold></h5>
 		</div>
 	</div>
 	</div>
@@ -195,7 +207,3 @@
 
 </body>
 </html>
-
-<!-- View in Browser -->
-
-<!-- End View in Browser -->
