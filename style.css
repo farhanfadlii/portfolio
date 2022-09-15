@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@font-face{
+  font-family: ThePretender;
+  src: url(ThePretender.ttf);
+}
+@font-face{
+  font-family: NivaAlt;
+  src: url(NivaAlt.ttf);
+}
+@font-face{
+  font-family: Helena;
+  src: url(Helena.ttf);
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+ 
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+.navbar-brand{
+  font-family:ThePretender ;
+  font-size: 30px;
+  color: blue;
+}
+.welcome{
+  width: 95% ;
+  margin: 0 auto;
+}
+.skills hr{
+  border-top: 2px solid #b4b4b4;
+  width: 34%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.works hr {
+  border-top: 2px solid #b4b4b4;
+  width: 40%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+}
+.fa-code{
+  color: red;
+  transition: 0.5s;
+}
+.fa-code:hover{
+  color: red;
+  transition: 0.5s;
+ filter: drop-shadow(0 0 10px) 
+}
+.fa-css3{
+ color: #027ac2;
+ transition: 0.5s;
+}
+.fa-css3:hover{
+ color: #027ac2;
+ transition: 0.5s;
+ filter: drop-shadow(0 0 10px) ;
+}
+.fa-bold{
+ color: #53397c;
+ transition: 0.5s;
+}
+.fa-bold:hover{
+ color: #53397c;
+ transition: 0.5s;
+ filter: drop-shadow(0 0 10px) ;
+}
+.fa-pencil-alt{
+ color: #f08800;
+ transition: 0.5s;
+ font-size: 3.7em;  
+}
+.fa-pencil-alt:hover{
+ color: #f08800;
+ filter: drop-shadow(0 0 10px) ;
+}
+.fa-paint-brush{
+ color: #39d4eb;
+ transition: 0.5s;
+ font-size: 3.7em;
+}
+.fa-paint-brush:hover{
+ color: #39d4eb;
+ filter: drop-shadow(0 0 10px) ;
+}
+.fa-js{
+ color: #f0Db4F;
+ transition: 0.5s;
+ font-size: 3.7em;
+}
+.fa-js:hover{
+ color: #f0Db4F;
+ filter: drop-shadow(0 0 10px) ;
+}
+.fa-code,.fa-css3,.fa-bold, .fa-pencil-alt, .fa-paint-brush .fa-js{
+  font-size: 3em;
+}
+
+/* SOCIAL ANIMATION */
+
+.social a{
+  font-size: 4.5em;
+  padding: 3rem ;
+  transition: 0.3s;
+}
+.fa-linkedin{
+  color:#0072b1 ;
+  transition: 0.3s;
+}
+.fa-linkedin:hover{
+  font-size: 1.075em;
+  filter: drop-shadow(0 0 10px) ;
+}
+.fa-instagram{
+  transition: 0.3s;
+}
+.fa-instagram:hover{
+  font-size: 1.075em;
+  filter: drop-shadow(0 0 10px) ;
+}
+.fa-github{
+  transition: 0.3s;
+  color: black;
+}
+.fa-github:hover{
+  font-size: 1.075em;
+  filter: drop-shadow(0 0 10px) ;
+}
+
+#farhan{
+  letter-spacing: 3px;
+}
+.footertext{
+  color: black;
+}
+.footer{
+  color: white;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+.descskill{
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #003d65;
+  background-color: transparent;
+  position: sticky;
+}
+.brand-title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-size: 50px;
+  font-family: ThePretender;
+}
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #003d65;
+}
+.navbar-links li {
+  list-style: none;
+  position: relative;
+  color: #003d65;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  color: #003d65;
+  font-family: NivaAlt;
+}
+.navbar-links li a::after{
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  background: green;
+  transition-duration: 0.5s;
+}
+.navbar-links li a:hover::after{
+  width: 100%;
+}
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  color: #003d65;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background:#003d65;
+  border-radius: 10px;
+}
+@media screen and (max-width:768px){
+  .toggle-button {
+    display: flex;
+  }
+  .brand-title {
+  font-family: ThePretender;
+  font-size: 31px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li{
+    text-align: center;
+  }
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .navbar-links li a:hover{
+    background-color: #1ad96e;
+  }
+  .navbar-links li a:hover::after{
+    width: 0%;
+    }
+.skills hr{
+  border-top: 2px solid #b4b4b4;
+  width: 75%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+.works hr {
+  border-top: 2px solid #b4b4b4;
+  width: 91%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
+
+
